@@ -1,0 +1,239 @@
+// Custome Variables //
+
+//Header
+$header-bg:                             #ccc;
+$header-height:                         72px;
+$header-logo-icon-bg:                   url(../images/finale-icon.png) no-repeat left;
+$logo-text-top-padding:                 20px;
+$title-align:                           center;
+$title-padding:                         22px 0;
+$title-width:                           bold;
+$header-link-color:                     #333;
+$header-link-color-hover:               #000;
+
+//Custom Gradient
+@mixin gradient-blue {
+    background-color: #74beff; // Old browsers
+    @include filter-gradient(#74beff, #74beff, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #74beff 0%,#a3d4ff 5%,#00dde4 95%,#74beff 100%));
+
+    &:hover{
+        background-color: #40a6ff; // Old browsers
+        @include filter-gradient(#40a6ff, #387793, vertical); // IE6-8
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(top,  #40a6ff 0%,#008ecf 5%,#4e77c6 95%,#387793               100%));
+    }
+}
+
+@mixin gradient-gray{
+    background-color: #999999; // Old browsers
+    @include filter-gradient(#999999, #808080, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #999999 0%,#b3b3b3 5%,#999999 95%,#808080 100%));
+    
+    &:hover{
+        background-color: #656565; // Old browsers
+        @include filter-gradient(#656565, #505050, vertical); // IE6-8
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(top,  #656565 0%,#7b7b7b 5%,#686868 95%,#505050               100%)); 
+    }
+}
+@mixin gradient-light-gray{
+    background-color:       #cccccc; // Old browsers
+    @include filter-gradient(#cccccc, #e6e6e6, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #cccccc 0%,#dcdcdc 5%,#e6e6e6 100%));
+}
+@mixin gradient-green{
+    background-color: #58ad3e; // Old browsers
+    @include filter-gradient(#58ad3e, #0b9e54, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #58ad3e 0%,#6ebe44 5%,#0baa4b 95%,#0b9e54 100%));
+    
+    &:hover{
+        background-color: #58ad3e; // Old browsers
+        @include filter-gradient(#58ad3e, #0b9e54, vertical); // IE6-8
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(top,  #58ad3e 0%,#2db34a 5%,#017f48 95%,#0b9e54 100%));
+    }
+}
+@mixin gradient-red{
+    background-color: #8d362a; // Old browsers
+    @include filter-gradient(#8d362a, #7e1416, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #8d362a 0%,#D30015 5%,#a7241c 95%,#7e1416 100%));
+
+    &:hover{
+        background-color: #58ad3e; // Old browsers
+        @include filter-gradient(#7E1416, #7E1416, vertical); // IE6-8
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(top,  #7E1416 0%,#A7241C 5%,#7F1617 95%,#7E1416 100%));
+
+    }
+}
+@mixin gradient-yellow{
+    background-color: #f1e767; // Old browsers
+    @include filter-gradient(#f1e767, #feb645, vertical); // IE6-8
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #f1e767 0%,#feb645 100%));
+    color: #333 !important;
+    
+
+    &:hover{
+        background-color: #ffd65e; // Old browsers
+        @include filter-gradient(#ffd65e, #febf04, vertical); // IE6-8
+        $experimental-support-for-svg: true;
+        @include background-image(linear-gradient(top,  #ffd65e 0%,#febf04 100%));
+    }
+}
+
+//Buttons
+$btn-padding-right:                     25px;          
+
+$btn-border-radius:                     4px !default;
+$btn-border:                            None !default;
+$btn-xsmall:                            13px;
+$btn-small:                             18px;
+$btn-medium:                            22px;
+$btn-large:                             28px;
+$btn-xlarge:                            36px;
+
+$btn-transform-uppercase:               uppercase;
+$btn-icon-PaddingTop:                   30px;
+$static-btn-bg:                         #ececec;
+$static-blue-btn-bg:                    #00DDE4;
+$static-btn-border:                     #CCCCCC 1px solid;
+$Futura-W03-Md:                         "Futura W03 Md", Georgia, "Times New Roman" !default;
+$static-btn-color:                      #4d4d4d;
+
+//Stand Border
+$gray-border:                           1px solid #DDDDDD;
+
+//Backgrounds
+$gray-bg-light:                        #F2F2F2;
+$gray-bg-dark:                         #CCCCCC;
+
+$blue-bg-light:                        #d9fafb;
+
+@mixin padding-margin-none{
+    padding:                            0px 0px 0px 0px;
+    margin:                             0px 0px 0px 0px;
+}                   
+
+@mixin btn{
+    border:                             $btn-border;
+    color:                              $btn-default-color;
+    text-transform:                     $btn-transform-uppercase;
+    cursor:                             pointer;
+    padding-right:                      $btn-padding-right;
+    font-family:                        $Futura-W03-Md;
+    margin:                             2px;
+}
+@mixin btn-static{
+    border:                             $btn-border; 
+    color:                              $btn-default-color;
+    text-transform:                     $btn-transform-uppercase;
+    cursor:                             pointer;
+    padding-right:                      $btn-padding-right;
+    font-family:                        $Futura-W03-Md;
+    margin:                             2px;
+}
+
+//Alert
+@mixin alert-red{
+    color:                              #ffffff;
+    font-weight:                        bold;
+    @include                            border-radius(3px);
+    padding:                            4px 10px;
+    background:                         #FF8568;
+}                 
+
+$alert-text-small:                      12px;
+$alert-text-medium:                     15px;
+$alert-text-large:                      18px;
+
+//Tabs
+$tab-content-border-top:                none;
+$tab-content-border:                    1px solid #e2dfdf;
+
+//Table
+$table-padding:                         15px 0 8px 0;
+$table-font-width:                      600;
+$table-date-font-size:                  12px;
+$table-arrow-icon-color:                #333333;
+
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+        background-color:               $table-bg-contend;
+//        border:                         $table-gray-border;
+        color:                          $t-gray-highlight-color;
+    }
+  }
+}
+.table-striped-lightGray {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+        background-color:               $table-bg-contend;
+//        border:                         none;
+        border-right:                     $table-gray-border;
+        color:                          $t-gray-highlight-color;
+    }
+  }
+}
+
+.table-striped {
+  > tbody > tr:nth-child(odd) > td:first-child {
+      background-color:                 $table-bg-accent;
+//      border:                           1px solid #a4a4a4;
+      color:                            $t-gray-color;
+  }
+}
+
+.table-striped-blue {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+        border:                         1px solid #d9fafb;
+    }
+  }
+}
+
+.table-striped-blue {
+  > tbody > tr:nth-child(odd) {
+      background-color:                 $table-bg-blue-accent;
+      border-right:                     $table-blue-border;
+  }
+}
+
+//Form Elements
+$form-field-padding-left:               5px;
+$form-field-padding-right:              5px;
+$form-field-heigh:                      32px;
+$form-field-font-size:                  14px;
+$form-field-color:                      #000;
+$form-field-width:                      100%;
+$form-field-border:                     1px solid #e2dfdf;
+$form-field-border-none:                none;
+$form-number-padding:                   5px 10px; 
+$form-number-font-width:                600;
+
+@mixin text-field{
+    font-size:                          14px;
+    color:                              #000;
+    border:                             none;
+    height:                             32px;
+    padding:                            0px 5px 0px 5px;
+    width:                              100%;
+}
+
+//Stack
+$stack-padding:                         10px 10px 10px 10px;
+$stack-margin:                          20px 10px 10px 10px;
+$stack-bg:                              #d9fafb;
+$brand-text-decoration-none:            none;
+
+

@@ -1,0 +1,439 @@
+//This file is using Bootstrap.
+@import "compass";
+@import "bootstrap";
+@import "settings";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+//Custom Font for Button
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=aae1ac2a-62fc-42cd-aa9e-ef9225ce178a&fontids=1296280");
+@font-face{
+font-family:"Futura W03 Md";
+src:url("../assets/fonts/bootstrap/1fa9414b-9afc-4719-897c-54c38c7ccd93.eot?#iefix");
+src:url("../assets/fonts/bootstrap/1fa9414b-9afc-4719-897c-54c38c7ccd93.eot?#iefix") format("eot"),url("../assets/fonts/bootstrap/5407c324-9a59-4224-afeb-d12c05b7d9b1.woff") format("woff"),url("../assets/fonts/bootstrap/f9c32faa-9a44-4549-82d7-741a681854d8.ttf") format("truetype"),url("../assets/fonts/bootstrap/5096bbd1-9d82-4da1-8b8d-118be68d1579.svg#5096bbd1-9d82-4da1-8b8d-118be68d1579") format("svg");
+}
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+with any questions regarding Web Fonts:  http://www.linotype.com
+*/
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    @include                padding-margin-none;
+    list-style:             none;
+}
+ul li{
+    @include                padding-margin-none;
+    list-style:             none;
+}
+.header{
+    @include                make-row;
+}
+
+.main-search{
+    @include                make-md-column(3);
+}
+.main-userdetails{
+   @include                 make-md-column(6);
+   @include                 border-radius(5);
+}
+
+//Buttons
+label input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+.upload-btn{
+    display: inline-block;
+}
+.xsmall{
+    font-size:              $btn-xsmall;
+}
+.small{
+    font-size:              $btn-small;
+}
+.medium{
+    font-size:              $btn-medium;
+}
+.large{
+    font-size:              $btn-large;
+}
+.xlarge{
+    font-size:              $btn-xlarge;
+}
+
+.blue{
+    @include                gradient-blue;
+    @include                border-radius(4px);
+    @include                btn;
+}
+.green{
+    @include                gradient-green;
+    @include                border-radius(4px);
+    @include                btn;
+}
+.red{
+    @include                gradient-red;
+    @include                border-radius(4px);
+    @include                btn;
+}
+.gray{
+    @include                gradient-gray;
+    @include                border-radius(4px);
+    @include                btn;
+}
+.yellow{
+    @include                gradient-yellow;
+    @include                border-radius(4px);
+    @include                btn;
+}
+.btn-static-blue{
+    background:             $static-blue-btn-bg;
+    @include                border-radius(4px);
+    @include                btn;
+    color:                  $static-btn-color;
+
+}
+.btn-static-blue:hover{
+    color:                  $static-btn-color;
+
+}
+.btn-static{
+    background:             $static-btn-bg;
+    @include                border-radius(4px);
+    @include                btn;
+    color:                  $static-btn-color;
+}
+.btn-static:hover{
+    color:                  $static-btn-color;
+}
+
+.btn span{
+    padding-top:            $btn-icon-PaddingTop;    
+}
+.btn-save{
+    margin: 15px;
+}
+
+//Header
+.header-strip{
+    @include                gradient-light-gray;
+    height:                 $header-height;  
+}
+.navbar-brand {
+    background:             $header-logo-icon-bg;
+    height:                 $header-height;
+    width:                  70px;
+}
+.company-logo-icon{
+//    @include                make-md-column(4);
+//    @include                make-sm-column(4); 
+//    @include                make-xs-column(4);
+    width:                  202px;
+}
+.company-logo-text{ 
+    height:                 $header-height;
+    padding-top:            $logo-text-top-padding;
+//    padding-left:           60px;
+    line-height:            57px;
+}
+.header-title-w-icon{
+    position:               absolute;
+    width:                  100%;
+    left:                   0;
+    margin:                 auto 0;
+    height:                 $header-height;
+    text-align:             $title-align;
+    padding:                $title-padding;
+    font-weight:            $title-width;
+    text-decoration:        $brand-text-decoration-none;
+}
+.header-title{
+    @include                make-md-column(6);
+    @include                make-sm-column(5);
+    @include                make-xs-column(6);
+    height:                 $header-height;
+    text-align:             $title-align;
+    padding:                $title-padding;
+    font-weight:            $title-width;
+}
+.main-menu{
+    @include                make-md-column(1);
+    @include                make-sm-column(1);
+    @include                make-xs-column(1);
+    height:                 $header-height;
+    color:                  $brand-primary;
+}
+.main-menu-text{
+    @include                make-md-column(3);
+    @include                make-sm-column(3);
+    @include                make-xs-column(3);
+    height:                 $header-height;
+    padding-top:            $logo-text-top-padding;
+    text-align:             right;
+}
+.menu-text{
+    padding-right:          52px;
+    line-height:            75px;
+}
+.header-title a{
+    color:                  $header-link-color;
+}
+.header-title a:hover{
+    color:                  $header-link-color-hover;
+}
+
+//Alerts
+.alert-red{
+    @include                alert-red;    
+}
+
+//Tabas
+.tab-content{
+    border:                 $tab-content-border;
+    border-top:             $tab-content-border-top;
+}
+
+//Pages
+.col-one{
+    @include                make-md-column(1);
+    @include                make-sm-column(1);
+    @include                make-xs-column(1);
+}
+.col-two{
+    @include                make-md-column(2);
+    @include                make-sm-column(2);
+    @include                make-xs-column(2);
+}
+.col-three{
+    @include                make-md-column(3);
+    @include                make-sm-column(3);
+    @include                make-xs-column(3);
+}
+.col-four{
+    @include                make-md-column(4);
+    @include                make-sm-column(4);
+    @include                make-xs-column(4);
+}
+.col-five{
+    @include                make-md-column(5);
+    @include                make-sm-column(5);
+    @include                make-xs-column(5);
+}
+.col-six{
+    @include                make-md-column(6);
+    @include                make-sm-column(6);
+    @include                make-xs-column(6);
+}
+.col-seven{
+    @include                make-md-column(7);
+    @include                make-sm-column(7);
+    @include                make-xs-column(7);
+}
+.col-eight{
+    @include                make-md-column(8);
+    @include                make-sm-column(8);
+    @include                make-xs-column(8);
+}
+.col-nine{
+    @include                make-md-column(9);
+    @include                make-sm-column(9);
+    @include                make-xs-column(9);
+}
+.col-ten{
+    @include                make-md-column(10);
+    @include                make-sm-column(10);
+    @include                make-xs-column(10);
+}
+.col-eleven{
+    @include                make-md-column(11);
+    @include                make-sm-column(11);
+    @include                make-xs-column(11);
+}
+.col-twelve{
+    @include                make-md-column(12);
+    @include                make-sm-column(12);
+    @include                make-xs-column(12);
+}
+
+
+//Tables
+.table-master-title{
+    padding:                $table-padding;
+    font-weight:            $table-font-width;
+}
+
+.table-arrow-icon{
+    color:                  $table-arrow-icon-color;
+    text-decoration:        $brand-text-decoration-none;
+}
+.tab-text span {
+    color:                  $brand-primary;
+}
+
+//Icon
+.function-icon a{
+    text-decoration:        $brand-text-decoration-none;
+}
+.function-icon a .link{
+    color:                  $brand-primary;
+}
+a .link:hover{
+    color:                  lighten($brand-primary, 35%);
+}
+
+//Form Elemetns
+
+//Select Dropdow
+.basic-selecter{
+    @include                text-field;
+    border:                 $form-field-border;
+}
+.text-field{
+    @include                text-field; 
+    @include                gradient-light-gray;
+}
+.text-area{
+    @include                text-field;
+    border:                 $form-field-border;
+    height:                 auto;
+    resize:                 none;
+}
+.numbering{
+    @include                gradient-light-gray;
+    padding:                $form-number-padding;
+    font-weight:            $form-number-font-width;
+}
+.data-stack div{
+    padding:                $stack-padding;
+    margin:                 $stack-margin;
+}
+.data-stack div:nth-child(odd){
+    background:             $blue-bg-light;
+}
+.stack-header{
+    @include                padding-margin-none;
+    width:                  100%;
+}
+.stack-header .number{
+    width: 50px; 
+}
+.stack-header .title{
+    font-size:              $font-size-h4;
+    font-weight:            $headings-font-weight;
+    padding-bottom:         $headings-line-height;
+}
+.stack-header .function-icon{
+    text-align:             right;
+}
+.stack-box{
+//   width:                   100%;
+    max-width:              500px;
+    align-content: center;   
+    border:                 $gray-border;
+    background:             $gray-bg-light;
+    padding:                15px;
+    margin: 0 auto;
+    margin-top: 15px
+}
+.stack-box li{
+    display:list-item;
+}
+.stackbox-btn{ 
+    padding:                5px 0 0px 0;
+    text-align:             right;
+}
+.edit-textarea{
+    @include                text-field;
+    height:                 auto;
+    background:             url(../images/edit-2-icon.png) no-repeat, #fff;
+    background-position:    98% 90%;
+    border:                 $form-field-border;
+    
+}
+.edit-textarea:hover{
+    background:             url(../images/edit-2-icon-h.png) no-repeat right bottom, #fff;
+    background-position:    98% 90%;
+}
+.edit-textarea .text-area{
+    background: none;
+    border: none;
+}
+
+//Checkbox
+input[type='checkbox'] {
+     /* Hide the input, but have it still be clickable */
+     opacity:               0;
+     float:                 left;
+     width:                 18px;
+ }
+ input[type='checkbox'] + label {
+     margin:                0;
+     clear:                 none;
+     /* Left padding makes room for image */
+     padding:               0px 0 0px 24px;
+     /* Make look clickable because they are */
+     cursor:                pointer;
+     background:            url(../images/off.png) left center no-repeat;
+ }
+ /*
+    Change from unchecked to checked graphic
+*/
+ input[type='checkbox']:checked + label {
+     background-image:      url(../images/check.png);
+ }
+ input[type=checkbox]:not(old):checked + label > span:before {
+     content:               '✓';
+     display:               block;
+     font-size:             $form-field-font-size;
+     color:                 $form-field-color;
+     line-height:           1.5em;
+     text-align:            center;
+     
+ }
+
+//Radio button 
+ input[type=radio].css-checkbox {
+     display:               none;
+ }
+ input[type=radio].css-checkbox + label.css-label {
+     padding-left:          24px;
+     height:                19px;
+     display:               inline-block;
+     line-height:           19px;
+     background-repeat:     no-repeat;
+     background-position:   0 0;
+     font-size:             $form-field-font-size;
+     color:                 $form-field-color;
+     vertical-align:        middle;
+     cursor:                pointer;
+     padding-right:         10px;
+     outline:               none;
+ }
+ input[type=radio].css-checkbox:checked + label.css-label {
+     background-position:   0 -19px;
+ }
+ label.css-label {
+     background-image:      url(../images/radio-button.png);
+     -webkit-touch-callout: none;
+     -webkit-user-select:   none;
+     -khtml-user-select:    none;
+     -moz-user-select:      none;
+     -ms-user-select:       none;
+     user-select:           none;
+ }
+
+//Top Menu
+.icon-list a span {
+    font-family:            $font-family-serif;
+}
+
+

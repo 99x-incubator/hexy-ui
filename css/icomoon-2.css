@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-mctocn');
+	src:url('fonts/icomoon.eot?#iefix-mctocn') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-mctocn') format('woff'),
+		url('fonts/icomoon.ttf?-mctocn') format('truetype'),
+		url('fonts/icomoon.svg?-mctocn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-addnew:before {
+	content: "\e61f";
+}
+.icon-graph:before {
+	content: "\e600";
+}
+.icon-delete:before {
+	content: "\e601";
+}
+.icon-down:before {
+	content: "\e602";
+}
+.icon-write:before {
+	content: "\e603";
+}
+.icon-user:before {
+	content: "\e604";
+}
+.icon-upload-doc:before {
+	content: "\e605";
+}
+.icon-up:before {
+	content: "\e606";
+}
+.icon-settings:before {
+	content: "\e607";
+}
+.icon-star:before {
+	content: "\e608";
+}
+.icon-search:before {
+	content: "\e609";
+}
+.icon-profile:before {
+	content: "\e60a";
+}
+.icon-print:before {
+	content: "\e60b";
+}
+.icon-pin:before {
+	content: "\e60c";
+}
+.icon-members:before {
+	content: "\e60d";
+}
+.icon-network:before {
+	content: "\e60e";
+}
+.icon-navigation:before {
+	content: "\e60f";
+}
+.icon-link:before {
+	content: "\e610";
+}
+.icon-message:before {
+	content: "\e611";
+}
+.icon-edit-doc:before {
+	content: "\e612";
+}
+.icon-home:before {
+	content: "\e613";
+}
+.icon-group:before {
+	content: "\e614";
+}
+.icon-edit:before {
+	content: "\e615";
+}
+.icon-edit-2:before {
+	content: "\e616";
+}
+.icon-document-set:before {
+	content: "\e617";
+}
+.icon-doc-store:before {
+	content: "\e618";
+}
+.icon-chat:before {
+	content: "\e619";
+}
+.icon-cam:before {
+	content: "\e61a";
+}
+.icon-call:before {
+	content: "\e61b";
+}
+.icon-calender:before {
+	content: "\e61c";
+}
+.icon-alert:before {
+	content: "\e61d";
+}
+.icon-add-user:before {
+	content: "\e61e";
+}

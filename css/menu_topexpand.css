@@ -1,0 +1,180 @@
+/* line 1, ../scss/menu_topexpand.scss */
+.menu-wrap a {
+  color: #333;
+}
+
+/* line 6, ../scss/menu_topexpand.scss */
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  color: #555;
+}
+
+/* line 10, ../scss/menu_topexpand.scss */
+.content-wrap {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* line 19, ../scss/menu_topexpand.scss */
+.content {
+  position: relative;
+  background: #e5e5e5;
+  padding-bottom: 12em;
+}
+
+/* Common styles for menu button and menu-wrap */
+/* line 27, ../scss/menu_topexpand.scss */
+.menu-button,
+.menu-wrap {
+  position: fixed;
+  width: 2.5em;
+  height: 40px;
+  -webkit-transform: translate3d(1.5em, 1.5em, 0);
+  transform: translate3d(1.5em, 1.5em, 0);
+  right: 55px;
+}
+
+/* Menu Button */
+/* line 38, ../scss/menu_topexpand.scss */
+.menu-button {
+  z-index: 1000;
+  margin: 0;
+  font-size: 1.5em;
+  padding: 0;
+  border: none;
+  text-indent: 2.5em;
+  color: transparent;
+  background: none;
+  margin-top: -15px;
+  outline: none;
+}
+
+/* line 51, ../scss/menu_topexpand.scss */
+.menu-button::before {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  background: linear-gradient(#000000 20%, transparent 20%, transparent 40%, #000000 40%, #000000 60%, transparent 60%, transparent 80%, #000000 80%);
+  content: '';
+}
+
+/* line 61, ../scss/menu_topexpand.scss */
+.menu-button:hover {
+  opacity: 0.6;
+}
+
+/* Menu */
+/* line 66, ../scss/menu_topexpand.scss */
+.menu-wrap {
+  z-index: 999;
+  background: #e5e5e5;
+  -webkit-transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;
+  transition: width 0.4s, height 0.4s, transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* line 75, ../scss/menu_topexpand.scss */
+.menu {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 81, ../scss/menu_topexpand.scss */
+.icon-list {
+  float: left;
+  padding: 1.3em 2em 0 6em;
+}
+
+/* line 86, ../scss/menu_topexpand.scss */
+.icon-list a {
+  opacity: 0;
+  display: inline-block;
+  padding: 0 0.2em;
+  margin: 0 15px;
+  text-align: center;
+}
+
+/* line 95, ../scss/menu_topexpand.scss */
+.icon-list a span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding-top: 0.5em;
+}
+
+@media screen and (max-width: 50em) {
+  /* line 105, ../scss/menu_topexpand.scss */
+  .icon-list a {
+    padding: 0.5em 0em;
+    margin: 0 5px;
+  }
+
+  /* line 110, ../scss/menu_topexpand.scss */
+  .icon-list a span {
+    display: none;
+  }
+}
+/* Shown menu */
+/* line 116, ../scss/menu_topexpand.scss */
+.show-menu .content-wrap {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate3d(0, 72px, 0);
+  transform: translate3d(0, 0px, 0);
+}
+
+/* line 123, ../scss/menu_topexpand.scss */
+.show-menu .menu-wrap {
+  width: 100%;
+  height: 72px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  right: 0;
+}
+
+/* line 133, ../scss/menu_topexpand.scss */
+.show-menu .icon-list a {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s 0.4s;
+  transition: opacity 0.4s 0.4s;
+}
+
+/* line 139, ../scss/menu_topexpand.scss */
+.show-menu .icon-list a:nth-child(2) {
+  -webkit-transition-delay: 0.42s;
+  transition-delay: 0.42s;
+}
+
+/* line 144, ../scss/menu_topexpand.scss */
+.show-menu .icon-list a:nth-child(3) {
+  -webkit-transition-delay: 0.44s;
+  transition-delay: 0.44s;
+}
+
+/* line 149, ../scss/menu_topexpand.scss */
+.show-menu .icon-list a:nth-child(4) {
+  -webkit-transition-delay: 0.46s;
+  transition-delay: 0.46s;
+}
+
+/* line 154, ../scss/menu_topexpand.scss */
+.show-menu .icon-list a:nth-child(5) {
+  -webkit-transition-delay: 0.48s;
+  transition-delay: 0.48s;
+}
+
+/* line 159, ../scss/menu_topexpand.scss */
+.show-menu .icon-list a:nth-child(6) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}

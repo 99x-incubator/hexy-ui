@@ -1,0 +1,169 @@
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+    font-family:"robotoregular";
+    margin:0px;
+    font-family: 'robotoregular';
+background-color: #e5e9ec;
+margin-bottom: 30px;
+}
+h1 {
+    margin-bottom: 1em;
+    font-family: 'robotolight';
+    letter-spacing: -2px;
+}
+.header{
+    padding-left:30px;
+    height: 50px;
+    padding-top:10px;
+    font-size: 14px;
+    background: #000;
+    color: #ccc;
+    z-index: 2000px;
+}
+.header span{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.cc-side-menu-black{
+    height:100%;
+    position:fixed;
+    top:0px;
+    background-color:#000;
+    color:#fff;
+}
+.cc-side-bar{
+    width:275px;
+    margin-left:-275px;
+}
+.cc-side-bar-margin{
+    width:10px;
+}
+#launchButton{
+    margin-top:70px;
+    position:fixed;
+    -webkit-border-top-right-radius: 5px; 
+    -webkit-border-bottom-right-radius: 5px; 
+    -moz-border-radius-topright: 5px; 
+    -moz-border-radius-bottomright : 5px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    padding:8px 20px;
+    height:38px;
+    width:50px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+    transition: width 0.1s ease-out;
+    cursor:pointer;
+    z-index:9999;
+}
+#launchButton:hover{
+    width:110px;
+}
+#launchButton:hover span{
+    display:block;
+    margin-top:0px;
+    opacity: 1; 
+    height: auto;
+    color:#fff;
+}
+#launchButton i{
+    float:left;
+    margin-right:10px;
+}
+#launchButton span{
+    display:block;
+    opacity: 0; 
+    height: 0;
+    margin-top:100px;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    overflow: hidden;
+}
+.cc-side-bar{
+    padding-top:50px;
+}
+.cc-side-menu-black ul{
+    padding:0px;
+    margin:20px;
+}
+.cc-side-menu-black ul li:first-child{
+    font-size:1.4em;
+    color:#fff;
+    font-family:'robotolight';
+    padding:4px 0px 4px 0px;
+    border-bottom-width:0px;
+    margin-left:0px;
+    cursor:default;
+}
+.cc-side-menu-black ul li:first-child i{
+    float:left;
+    margin-right:10px;
+}
+.cc-side-menu-black ul li{
+    padding:4px 0px 4px 5px;
+    margin-left:28px;
+    font-size:0.9em;
+    list-style:none;
+    color:#bbbbbb;
+    border-bottom:1px solid #222222;
+    cursor:pointer;
+}
+.cc-side-menu-black ul li:hover{
+    color:#ffffff;
+}
+.cc-app-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cc-web-element-container{
+    padding:20px;
+    background-color:#ffffff;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #f1f1f1;
+}
+.cc-web-element-container h3{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.cc-panel-controlls{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 28px;
+    height: 18px;
+    background: url(../images/ico-code.png) no-repeat;
+    background-size: 28px; 
+    cursor: pointer;
+}
+
+.cc-code{
+    display: none;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+}
