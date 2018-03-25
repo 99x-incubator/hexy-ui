@@ -103,6 +103,9 @@ h1 {
     transition: opacity 1s ease-out;
     overflow: hidden;
 }
+#midContainer{
+    background: white;
+}
 .cc-side-bar{
     padding-top:50px;
 }
