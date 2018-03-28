@@ -1,4 +1,4 @@
-# hex-library
+# hexy-ui
 
 [WIP]
 
